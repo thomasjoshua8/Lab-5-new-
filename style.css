@@ -1,0 +1,75 @@
+body {
+  background-color: lightgreen;
+}
+
+h1,h2 {
+  color:orange;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: darkgray;
+}
+
+
+nav li:hover{
+    position: relative;
+    list-style: none;
+    line-height: 1;
+    margin: 0;
+    background-color:yellow
+}
+section.right {
+  float: right;
+  width: 50%;
+  font-family: sans-serif;
+  font-style: italic;
+    }
+.title{
+  font-family: sans-serif
+}
+.header{
+  grid-area: header;
+  background-color:white;
+}
+.nav{
+  grid-area: nav;
+  color: lightblue;
+  font-size: 25px;
+  background-color:white;
+}
+.main{
+  grid-area: main;
+  background-color:white;
+}
+.footer{
+  grid-area: footer;
+  background-color:white;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 15px;  
+  grid-template-areas:
+    'header header header'
+    'nav main main'
+    'footer footer footer';
+  background-color: #069117;
+  padding: 10px;
+}
+.meat{
+  background-color: rgb(252, 80, 80)
+}
+.dairy{
+  background-color: yellow
+}
+.veg{
+  background-color: #90ee90
+}
+.unorder{
+  list-style-type: none;
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+}

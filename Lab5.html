@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>CPSC 2125 Lab 5</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="grid-container">
+		<header class="header">
+      <img src="images/its-ov-gaming-jt-logo.png" weight= "50"height ="50">
+      <header><h1>CPSC 2125 Lab 5</h1></header>
+      </header>
+      <nav class="nav">
+        <ul class="no-bullets">
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="Lab1.html" title="Lab 1">Lab 1</a></li>
+          <li><a href="Lab2.html" title="Lab 2">Lab 2</a></li>
+          <li><a href="Lab3.html" title="Lab 3">Lab 3</a></li>
+          <li><a href="Lab4.html" title="Lab 4">Lab 4</a></li>
+        </ul>
+      </nav>
+      <main class="main">
+        <h1>Lab 5</h1>
+        <p>Please fill out the following form.</P>
+        <p>* (Required)</p>
+        <form action="https://webdevbasics.net/scripts/yoga.php" method="POST">
+            <label for="firstname">First Name:*</label><br>
+            <input type="text" id="firstname" name="firstname" required><br>
+            <label for="lastname">Last Name:*</label><br>
+            <input type="text" id="lastname" name="lastname" required><br><br>
+            <label for="email">Enter your email:*</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="state">What state do you live in?*</label>
+            <select name="state" id="state" name="state" required>
+              <option value="">SELECT</option>
+              <option value="AL">AL</option>
+              <option value="FL">FL</option>
+              <option value="GA">GA</option>
+            </select>
+            <br><br>
+            <label for="marital status">What is your marital status?</label><br>
+            <input type="radio" id"single" name="marital status" value="Single">
+            <label for="single">Single</label><br>
+            <input type="radio" id"married" name="marital status" value="Married">
+            <label for="married">Married</label><br>
+            <input type="radio" id"divorced" name="marital status" value="Divorced">
+            <label for="divorced">Divorced</label><br><br>
+
+            <label for="skills">What skills do you possess?</label><br>
+            <input type="checkbox" id="program1" name="program1" value="Python">
+            <label for="program1"> Python</label><br>
+            <input type="checkbox" id="program2" name="program2" value="Java">
+            <label for="program2"> Java</label><br>
+            <input type="checkbox" id="program3" name="program3" value="HTML">
+            <label for="program3"> HTML</label><br><br>
+            <input type="submit" value="Submit">
+
+            <p>Comments:</p>
+            <textarea id="comments" name="comments" rows="5" cols="50">
+            </textarea><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+      </main>
+		<footer class="footer">
+			<p>Joshua Thomas | <span id="time"></span></p>
+		</footer>
+
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
