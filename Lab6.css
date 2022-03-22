@@ -1,0 +1,70 @@
+body{
+  background-color: #9a729a;
+}
+p{
+  font-family: cursive;
+  font-size: 20px;
+}
+h1,h2 {
+  text-align: center;
+}
+nav ul{
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  margin-right: 15px;
+  transition: all .10s ease;
+  color: #fff;
+  border: 3px solid white;
+  font-family:'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color : transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+}
+nav li:hover{
+  color: #004080;
+  background-color: #fff;
+}
+.header{
+  grid-area: header;
+  background-color: rgb(253, 8, 8);
+}
+.nav{
+  grid-area: nav;
+  background-color: greenyellow;
+  text-align: center;
+}
+.section{
+  grid-area: section;
+  background-color: orange;
+}
+.aside{
+  grid-area: aside;
+  background-color: rgb(45, 255, 16);
+}
+.article{
+  grid-area: article;
+  background-color: rgb(46, 213, 255);
+}
+.footer{
+  grid-area: footer;
+  background-color: white;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas: 
+  "header header header" 
+  "nav nav nav"
+  "section section aside"
+  "article article aside"
+  "footer footer footer";
+  background-color: rgb(0,0,0);
+}
